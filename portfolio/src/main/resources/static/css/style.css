@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1088b0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1088b0;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+#contact {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Adds some padding for better spacing */
+    border-radius: 5px; /* Adds rounded corners */
+    margin-bottom: 20px; /* Adds space below this section */
+}
+
+#activities {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px; /* Adds some padding for better spacing */
+    border-radius: 5px; /* Adds rounded corners */
+    margin-bottom: 20px; /* Adds space below this section */
+}
+
+#certificates {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px; /* Adds some padding for better spacing */
+    border-radius: 5px; /* Adds rounded corners */
+    margin-bottom: 20px; /* Adds space below this section */
+}
+
+#references {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px; /* Adds some padding for better spacing */
+    border-radius: 5px; /* Adds rounded corners */
+    margin-bottom: 20px; /* Adds space below this section */
+}
+

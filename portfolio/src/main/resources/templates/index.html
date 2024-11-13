@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GoByeongJin Portfolio</title>
+    <!-- CSS 파일 경로 수정 -->
+    <link rel="stylesheet" href="/css/style.css/">
+</head>
+<body>
+<!-- Header: 사이트 제목과 이력서 다운로드 링크 -->
+<header style="position: relative; text-align: left;">
+    <h1 style="display: inline-block; margin: 0;">GoByeongJin Portfolio</h1>
+    <!-- 이력서 다운로드 링크 추가 -->
+    <a href="/files/resume.pdf" download style="position: absolute; right: 0; bottom: 0; text-decoration: none;">
+        이력서 다운로드
+    </a>
+</header>
+
+<!-- Self-Introduction: 자기소개 섹션 -->
+<section id="intro">
+    <h2>자기소개</h2>
+    <!-- 자기소개 텍스트 Thymeleaf로 추가 -->
+    <p th:text="${intro}"></p>
+</section>
+
+<!-- Contact Section: 연락처 섹션 -->
+<section id="contact">
+    <h2>Contact</h2>
+    <ul style="display: flex; list-style-type: none; padding: 0; align-items: center;">
+        <li style="margin-right: 20px;">
+            <a href="/files/병진이력서사진.jpg.png" download>
+                <img src="/files/병진이력서사진.jpg.png" style="width: 200px; height: auto; border-radius: 5px;">
+            </a>
+        </li>
+        <li>
+            <p>Tel: <span th:text="${phone}"></span></p>
+            <p>E-mail: <span th:text="${email}"></span></p>
+            <p>Instagram: <span th:text="${instagram}"></span></p>
+        </li>
+    </ul>
+</section>
+
+
+<!-- Activities & Awards: 활동 및 수상 내역 섹션 -->
+<section id="activities">
+    <h2>활동 및 수상 내역</h2>
+    <!-- 예시로 몇 가지 활동 내역을 추가해 볼 수 있음 -->
+    <ul>
+        <li>2023년 데이터 분석 공모전 수상</li>
+        <li>기상청 빅데이터 콘테스트 공모전 참여 </li>
+        <li>AI 기반 프로젝트 참여</li>
+    </ul>
+</section>
+
+<!-- Certificates: 자격증 섹션 -->
+<section id="certificates">
+    <h2>자격증</h2>
+    <!-- 자격증 목록 추가 -->
+    <ul>
+        <li>빅데이터분석기사 (2023/09/05) </li>
+        <li>SQLD (2024/06/10) </li>
+        <li>ADSP (2024/07/10) </li>
+    </ul>
+</section>
+
+<!-- References: 참고 자료 섹션 -->
+<section id="references">
+    <h2>Reference</h2>
+    <ul style="display: flex; flex-wrap: wrap; justify-content: space-between; list-style-type: none; padding: 0; margin: 0;">
+        <li style="flex: 1 1 30%; margin-bottom: 20px; text-align: center;">
+            <p style="font-weight: bold; margin-bottom: 10px;">밤새우기 프로젝트</p>
+            <!-- 프로젝트 클릭 시 새로운 페이지로 이동 -->
+            <a href="/project1.html" target="_blank">
+                <img src="/files/image.png" alt="밤새우기 프로젝트" style="width: 100%; height: auto; border-radius: 5px;">
+            </a>
+        </li>
+        <li style="flex: 1 1 30%; margin-bottom: 20px; text-align: center;">
+            <p style="font-weight: bold; margin-bottom: 10px;">기상청 빅데이터 공모전</p>
+            <!-- 새로운 페이지로 이동할 링크 -->
+            <a href="/project2.html" target="_blank">
+                <img src="/files/image (1).png" alt="기상청 빅데이터 공모전" style="width: 100%; height: auto; border-radius: 5px;">
+            </a>
+        </li>
+        <li style="flex: 1 1 30%; margin-bottom: 20px; text-align: center;">
+            <p style="font-weight: bold; margin-bottom: 10px;">빅프로젝트</p>
+            <!-- 새로운 페이지로 이동할 링크 -->
+            <a href="/project3.html" target="_blank">
+                <img src="/files/image (2).png" alt="빅프로젝트" style="width: 100%; height: auto; border-radius: 5px;">
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+<!-- Footer: 푸터 섹션 -->
+<footer>
+    <p>© 2024 GoByeongJin. All rights reserved.</p>
+</footer>
+</body>
+</html>
